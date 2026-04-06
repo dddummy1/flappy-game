@@ -169,6 +169,3 @@ SELECT * FROM scores ORDER BY score DESC;
 ## 👨‍💻 Автор
 
 Разработано как учебный fullstack + DevOps проект.
-
-````
-
