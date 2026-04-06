@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <div class="hud">
+      <div class="brand">
+        <span class="brand-title">Flappy Bot</span>
+        <span class="brand-subtitle">tap / click / space</span>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="label">Score</span>
+          <span class="value" id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Best</span>
+          <span class="value" id="best">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-shell">
+      <canvas id="gameCanvas" width="420" height="700"></canvas>
+
+      <div class="overlay visible" id="startOverlay">
+        <div class="card">
+          <h1>Flappy DevOps</h1>
+          <p>
+            Дрон держится в воздухе, пока ты вовремя жмешь прыжок.
+            Пройди между пайпами и набери максимум очков.
+          </p>
+          <div class="controls">
+            <span>Space</span>
+            <span>Click</span>
+            <span>Tap</span>
+          </div>
+          <button id="startButton">Старт</button>
+        </div>
+      </div>
+
+<div class="overlay" id="gameOverOverlay">
+  <div class="card game-over-card">
+    <h2>Game Over</h2>
+    <p>Ты влетел в прод.</p>
+
+    <p class="final-score">Счет: <span id="finalScore">0</span></p>
+
+    <div class="score-submit">
+      <label class="input-label" for="playerName">Имя в таблице</label>
+      <input
+        id="playerName"
+        class="player-input"
+        type="text"
+        maxlength="16"
+        placeholder="Например, dddummy"
+      />
+      <button id="submitScore" class="full-width-button">Отправить результат</button>
+    </div>
+
+    <div class="leaderboard-card">
+      <div class="leaderboard-title">🏆 Топ игроков</div>
+      <ul id="leaderboard" class="leaderboard-list"></ul>
+    </div>
+
+    <button id="restartButton">Играть снова</button>
+    <div class="hint">Enter тоже работает</div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>

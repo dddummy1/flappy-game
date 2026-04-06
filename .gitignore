@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Docker
+*.pid
+
+# Node (если вдруг потом добавишь фронт сборку)
+node_modules/
+dist/
+
+# Database (если вдруг появятся локальные файлы)
+*.sqlite3
+
+# Misc
+*.tmp
