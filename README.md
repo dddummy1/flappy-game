@@ -76,7 +76,7 @@ flappy-bot/
 
 ```bash
 git clone https://github.com/dddummy1/flappy-game
-cd flappy-bot
+cd flappy-game
 ```
 
 ### 2. Запустить проект
