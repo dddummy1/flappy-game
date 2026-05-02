@@ -34,9 +34,9 @@ jobs:
       - name: Check running containers
         run: docker ps
 
-      # 7. Проверяем backend (ВАЖНО: поправь порт!)
+      # 7. Проверяем backend
       - name: Check backend health
-        run: curl -f http://localhost:8000/health
+        run: curl -f http://localhost/api/health
 
       # 8. Если что-то сломалось — покажем логи
       - name: Show logs if failed
