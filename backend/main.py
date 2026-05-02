@@ -109,3 +109,8 @@ def reset_leaderboard():
         conn.commit()
 
     return {"status": "cleared"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}
