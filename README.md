@@ -75,8 +75,8 @@ flappy-bot/
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <your-repo-url>
-cd flappy-bot
+git clone https://github.com/dddummy1/flappy-game
+cd flappy-game
 ```
 
 ### 2. Запустить проект
@@ -169,6 +169,3 @@ SELECT * FROM scores ORDER BY score DESC;
 ## 👨‍💻 Автор
 
 Разработано как учебный fullstack + DevOps проект.
-
-````
-
